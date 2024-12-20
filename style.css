@@ -1,0 +1,141 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-violet: hsl(270, 3%, 87%);
+  --dark-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+  --error-input: hsl(0, 100%, 66%);
+  --linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Space Grotesk", serif;
+}
+
+/* MOBLIE-FRIST */
+
+/* CARDS */
+.container-cards {
+  padding: 32px 16px;
+}
+
+.bg-groud {
+  background: url(./img/bg-main-mobile.png) no-repeat center center;
+  height: 240px;
+  width: 100vw;
+}
+
+.card {
+  width: 286px;
+  height: 157px;
+}
+
+.card-back {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+/* .container-card-back {
+} */
+
+.cvc {
+  position: absolute;
+  color: var(--white);
+  top: 68px;
+  left: 288px;
+}
+
+.card-front {
+  position: absolute;
+  top: 121px;
+}
+/* 
+.container-card-front {
+} */
+
+.number-card {
+  position: absolute;
+  bottom: 30px;
+  left: -19px;
+  z-index: 1;
+}
+
+.number {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  color: var(--white);
+  font-family: "Space Grotesk", serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.name-card-yy {
+  position: absolute;
+  bottom: 20px;
+  left: 22px;
+  color: var(--white);
+  font-family: "Space Grotesk", serif;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.flex-item {
+  display: flex;
+  gap: 130px;
+}
+/* CARDS */
+
+/* FORM */
+.container-form {
+  display: flex;
+  padding: 75px 24px;
+  height: 330px;
+
+}
+
+.formulario input {
+  display: block;
+  width: 327px;
+  height: 45px;
+  border-radius: 4px;
+  border: 2px solid var(--light-violet);
+}
+
+.formulario label {
+  color: var(--very-dark-violet);
+  font-family: "Space Grotesk", serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.formulario input::placeholder {
+  color: var(--dark-violet);
+  padding: 11px 16px;
+  font-weight: 500;
+  font-size: 18px;
+
+}
+
+
+/* FORM */
+
+/* CONGRATULATIONS */
+
+
+
+.congratulations {
+  display: none;
+}
+
+
+
+
+/* CONGRATULATIONS */
