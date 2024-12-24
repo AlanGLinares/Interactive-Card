@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
 :root {
   --white: hsl(0, 0%, 100%);
   --light-violet: hsl(270, 3%, 87%);
@@ -12,7 +14,6 @@ body {
   padding: 0px;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: "Space Grotesk", serif;
 }
 
 /* MOBLIE-FRIST */
@@ -59,15 +60,11 @@ body {
 
 .number-card {
   position: absolute;
-  bottom: 30px;
-  left: -19px;
-  z-index: 1;
+  bottom: 40px;
+  left: 20px;
 }
 
 .number {
-  display: flex;
-  gap: 10px;
-  list-style: none;
   color: var(--white);
   font-family: "Space Grotesk", serif;
   font-size: 18px;
@@ -92,18 +89,23 @@ body {
 
 /* FORM */
 .container-form {
-  display: flex;
+  /* display: flex; */
+  display: none;
   padding: 75px 24px;
   height: 330px;
-
 }
 
-.formulario input {
-  display: block;
+.block-1 input {
   width: 327px;
   height: 45px;
   border-radius: 4px;
   border: 2px solid var(--light-violet);
+  margin-top: 9px;
+}
+
+.cardholder-name,
+.card-number {
+  margin-bottom: 20px;
 }
 
 .formulario label {
@@ -113,7 +115,6 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 20px;
 }
 
 .formulario input::placeholder {
@@ -124,6 +125,52 @@ body {
 
 }
 
+.title-flex {
+  display: flex;
+  gap: 35px;
+}
+
+.input-flex  {
+  display: flex;
+  gap: 10px;
+}
+
+.mm-yy {
+  display: flex;
+  gap: 10px;
+}
+
+.mm-yy input{
+  width: 72px;
+  height: 45px;
+  border: 2px solid var(--light-violet);
+  border-radius: 4px;
+}
+
+.cvc-card input {
+  width: 150px;
+  height: 45px;
+  border: 2px solid var(--light-violet);
+  border-radius: 4px;
+}
+
+.btn {
+  border: none;
+  font-family: "Space Grotesk", serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--very-dark-violet);
+  width: 327px;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 28px;
+}
+
+.btn:hover {
+  background-color:  hsl(278, 68%, 50%);
+  transition: .1s ease-in-out;
+}
 
 /* FORM */
 
@@ -132,10 +179,12 @@ body {
 
 
 .congratulations {
-  display: none;
+  display: block;
+}
+
+.content {
 }
 
 
-
-
+/* ver o espaçamento entre os input e termina a estilização  */
 /* CONGRATULATIONS */
