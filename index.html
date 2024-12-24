@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive-Card</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  
+
 </head>
+
 <body>
 
   <section class="container">
     <div class="bg-groud">
       <div class="container-cards">
         <div class="card-back">
-          <img class="card"src="./img/bg-card-back.png" alt="">
+          <img class="card" src="./img/bg-card-back.png" alt="">
           <div class="container-card-back">
             <span class="cvc">231</span>
           </div>
@@ -26,12 +25,7 @@
           <img class="card" src="./img/bg-card-front.png" alt="">
           <div class="container-card-front">
             <div class="number-card">
-              <ul class="number">
-                <li>9591</li>
-                <li>9489</li>
-                <li>6389</li>
-                <li>1011</li>
-              </ul>
+              <div class="number">1000 1000 1000 1000</div>
             </div>
             <div class="name-card-yy">
               <div class="flex-item">
@@ -45,38 +39,59 @@
     </div>
     <div class="container-form">
       <form action="" class="formulario">
-        <label for="">Cardholder Name</label>
-        <input type="text" placeholder="e.g. Jane Appleseed">
-        <label for="">Card Number</label>
-        <input type="text" placeholder="e.g. 1234 5678 9123 0000">
-        <div class="flex-inputs">
-          <div class="exp-date">
-            <label for="">Exp. Date (MM/YY)</label>
-            <input type="text" placeholder="MM">
-            <div>
-              <input type="text" placeholder="YY">
-            </div>
+        <div class="block-1">
+          <div class="cardholder-name">
+            <label for="">Cardholder Name</label>
+            <input type="text" placeholder="e.g. Jane Appleseed">
           </div>
-          <div class="input-cvc">
-            <label for="">CVC</label>
-            <input type="text" placeholder="e.g. 123">
+          <div class="card-number">
+            <label for="">Card Number</label>
+            <input type="text" placeholder="e.g. 1234 5678 9123 0000">
           </div>
         </div>
-        <button>Confirm</button>
+        <div class="block-2">
+          <div class="exp-date">
+            <div class="flex">
+              <div class="title-flex">
+                <label>Exp. Date (MM/YY)</label>
+                <label>CVC</label>
+              </div>
+              <div class="input-flex">
+                <div class="mm-yy">
+                  <div>
+                    <input type="text" placeholder="MM">
+                  </div>
+                  <div>
+                    <input type="text" placeholder="YY">
+                  </div>
+                </div>
+                <div class="cvc-card">
+                  <input type="text" placeholder="e.g. 123">
+                </div>
+              </div>
+              <div>
+             </div>
+            </div>
+          </div>
+            <button class="btn">Confirm</button>
+        </div>
       </form>
     </div>
   </section>
- 
+
   <section class="congratulations">
     <div class="content">
-      <div class="rounded"></div>
+      <div class="rounded">
+        <img src="./img/icon-complete.svg" alt="">
+      </div>
       <h1>Thank you!</h1>
       <p>We've added your card details</p>
     </div>
-    <button>Continue</button>
-  </section>  
+    <button class="btn">Continue</button>
+  </section>
 
 
-  
+
 </body>
+
 </html>
