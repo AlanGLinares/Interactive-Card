@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 
 :root {
   --white: hsl(0, 0%, 100%);
@@ -16,6 +16,10 @@ body {
   overflow-x: hidden;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
 /* MOBLIE-FRIST */
 
 /* CARDS */
@@ -122,7 +126,6 @@ body {
   padding: 11px 16px;
   font-weight: 500;
   font-size: 18px;
-
 }
 
 .title-flex {
@@ -130,7 +133,7 @@ body {
   gap: 35px;
 }
 
-.input-flex  {
+.input-flex {
   display: flex;
   gap: 10px;
 }
@@ -140,7 +143,7 @@ body {
   gap: 10px;
 }
 
-.mm-yy input{
+.mm-yy input {
   width: 72px;
   height: 45px;
   border: 2px solid var(--light-violet);
@@ -163,13 +166,13 @@ body {
   background-color: var(--very-dark-violet);
   width: 327px;
   padding: 15px;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-top: 28px;
 }
 
 .btn:hover {
-  background-color:  hsl(278, 68%, 50%);
-  transition: .1s ease-in-out;
+  background-color: hsl(278, 68%, 50%);
+  transition: 0.1s ease-in-out;
 }
 
 /* FORM */
@@ -216,6 +219,112 @@ body {
   margin: 48px auto;
 }
 
-
-/* ver o espaçamento entre os input e termina a estilização  */
 /* CONGRATULATIONS */
+
+/* STYLE-DESKTOP */
+@media (min-width: 1440px) {
+  .container {
+    display: flex;
+  }
+
+  .bg-groud {
+    background: url(./img/bg-main-desktop.png) no-repeat;
+    width: 483px;
+    height: 100vh;
+  }
+
+  /* posição do cards */
+  .container-cards {
+    position: relative;
+    top: 400px;
+  }
+
+  .card {
+    width: 447px;
+    height: 245px;
+  }
+
+  .card-front {
+    top: -390px;
+    left: 150px;
+    position: relative;
+  }
+
+  .card-back {
+    position: relative;
+    top: 130px;
+    left: 250px;
+  }
+  /* posição do cards */
+
+  /* input do cartão */
+  .number {
+    letter-spacing: 3.42px;
+    margin-left: 32px;
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .flex-item {
+    margin-left: 32px;
+    letter-spacing: 4px;
+    width: 345px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  .cvc {
+    letter-spacing: 2px;
+    top: 105px;
+    left: 355px;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  /* input do cartão */
+
+  /* form */
+  .container-form {
+    width: 100vh;
+    height: 900px;
+    display: flex;
+    padding: 120px 0px 0px 120px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block-1 {
+    width: 381px;
+  }
+
+  .block-1 input {
+    width: 420px;
+  }
+
+  .input-flex input {
+    width: 130px;
+  }
+
+  .title-flex {
+    margin-bottom: 9px;
+    justify-content: space-between;
+    width: 320px;
+  }
+  
+  .btn {
+    width: 420px;
+    border-radius: 6px;
+  }
+  
+
+
+
+
+
+
+
+
+  /* form */
+}
+
+/* STYLE-DESKTOP */
