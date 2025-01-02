@@ -211,6 +211,15 @@ img {
 .content {
   margin: 0 auto;
   padding-top: 90px;
+<<<<<<< HEAD
+=======
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 48px auto;
+>>>>>>> master
 }
 
 .btn {
