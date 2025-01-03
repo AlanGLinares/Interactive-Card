@@ -123,7 +123,7 @@ img {
 
 .formulario input::placeholder {
   color: var(--dark-violet);
-  padding: 11px 16px;
+  padding: 11px 0px;
   font-weight: 500;
   font-size: 18px;
 }
@@ -287,7 +287,8 @@ img {
   .container-form {
     width: 100vh;
     height: 900px;
-    display: flex;
+    /* display: flex; */
+    display: none;
     padding: 120px 0px 0px 120px;
     justify-content: center;
     align-items: center;
@@ -299,10 +300,20 @@ img {
 
   .block-1 input {
     width: 420px;
+    font-size: 18px;
+    text-indent: 16px;
+    font-family: "Space Grotesk", serif;
+    color: var(--very-dark-violet);
+    font-weight: 500;
   }
 
   .input-flex input {
     width: 130px;
+    font-size: 18px;
+    text-indent: 16px;
+    color: var(--very-dark-violet);
+    font-weight: 500;
+    font-family: "Space Grotesk", serif;
   }
 
   .title-flex {
@@ -315,6 +326,10 @@ img {
     width: 420px;
     border-radius: 6px;
   }
+  /* form */
+
+
+  /* CONGRATULATIONS-DESKTOP*/
   
 
 
@@ -323,8 +338,7 @@ img {
 
 
 
-
-  /* form */
+  /* CONGRATULATIONS-DESKTOP*/
 }
 
 /* STYLE-DESKTOP */
