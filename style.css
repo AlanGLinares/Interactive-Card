@@ -130,7 +130,8 @@ img {
 
 .title-flex {
   display: flex;
-  gap: 35px;
+  gap: 40px;
+  margin-bottom: 9px;
 }
 
 .input-flex {
@@ -255,9 +256,14 @@ img {
     top: 130px;
     left: 250px;
   }
+
+  .flex-mm-yy {
+    display: flex;
+  }
+
   /* posição do cards */
 
-  /* input do cartão */
+  /*cartão */
   .number {
     letter-spacing: 3.42px;
     margin-left: 32px;
@@ -273,7 +279,7 @@ img {
     display: flex;
     justify-content: space-between;
   }
- 
+
   .cvc {
     letter-spacing: 2px;
     top: 105px;
@@ -281,14 +287,15 @@ img {
     font-size: 28px;
     font-weight: 500;
   }
-  /* input do cartão */
+
+  /*cartão */
 
   /* form */
   .container-form {
     width: 100vh;
     height: 900px;
-    /* display: flex; */
-    display: none;
+    display: flex;
+    /* display: none; */
     padding: 120px 0px 0px 120px;
     justify-content: center;
     align-items: center;
@@ -321,22 +328,36 @@ img {
     justify-content: space-between;
     width: 320px;
   }
-  
+
   .btn {
     width: 420px;
     border-radius: 6px;
   }
+
+  .error {
+    border: 2px solid red
+  }
+
+
+    .error-message::after {
+    content: "cant't be blank";
+    font-size: 13px;
+    padding-top: 8px;
+    font-family: "Space Grotesk", serif;
+    color: red;
+  }
   /* form */
 
-
   /* CONGRATULATIONS-DESKTOP*/
-  
-
-
-
-
-
-
+  .congratulations {
+    width: 100vh;
+    display: none;
+    /* display: block; */
+    padding: 120px 0px 0px 120px;
+    position: absolute;
+    top: 167px;
+    left: 500px;
+  }
 
   /* CONGRATULATIONS-DESKTOP*/
 }
