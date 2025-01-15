@@ -89,6 +89,11 @@ img {
   display: flex;
   gap: 130px;
 }
+
+.name-card {
+  max-width: max-content;
+  white-space: nowrap;
+}
 /* CARDS */
 
 /* FORM */
@@ -335,14 +340,18 @@ img {
   }
 
   .error {
-    border: 2px solid red
+    border: 2px solid red !important
   }
 
+  .error-massage {
+    gap: 0;
+  }
 
-    .error-message::after {
-    content: "cant't be blank";
+  .error-message::after {
+    content: "Cant't be Blank";
     font-size: 13px;
-    padding-top: 8px;
+    display: block;
+    margin-top: 4px;
     font-family: "Space Grotesk", serif;
     color: red;
   }
