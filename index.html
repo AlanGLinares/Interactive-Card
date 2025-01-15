@@ -29,7 +29,7 @@
             </div>
             <div class="name-card-yy">
               <div class="flex-item">
-                <div class="name-card">Felicia Leire</div>
+                <div class="name-card"></div>
                 <div class="mm-yy-card">
                   <div class="flex-mm-yy">
                     <div class="card-mm"></div>
@@ -49,11 +49,11 @@
         <div class="block-1">
           <div class="cardholder-name">
             <label for="">Cardholder Name</label>
-            <input class="name-cardinput" type="text" placeholder="e.g. Jane Appleseed">
+            <input class="name-cardinput" type="text" placeholder="e.g. Jane Appleseed" required maxlength="16" minlength="16">
           </div>
           <div class="card-number">
             <label for="">Card Number</label>
-            <input class="num-cardinput" type="text" placeholder="e.g. 1234 5678 9123 0000" required maxlength="19">
+            <input class="num-cardinput" type="text" placeholder="e.g. 1234 5678 9123 0000" required maxlength="19" minlength="19" oninput="if (this.value.length > this.maxlength) this.value = this.value.slice(0, this.maxlength)">
           </div>
         </div>
         <div class="block-2">
@@ -66,14 +66,14 @@
               <div class="input-flex">
                 <div class="mm-yy">
                   <div>
-                    <input class="card-mminput" type="text" placeholder="MM">
+                    <input class="card-mminput" type="text" placeholder="MM" minlength="2" maxlength="2" required oninput="if (this.value.length > this.maxlength) this.value = this.value.slice(0, maxlength)">
                   </div>
                   <div>
-                    <input class="card-yyinput" type="text" placeholder="YY">
+                    <input class="card-yyinput" type="text" placeholder="YY" minlength="2" maxlength="2" required oninput="if (this.value.lenght > this.maxlength) this.value = this.value.slice(0, maxlength)">
                   </div>
                 </div>
                 <div class="cvc-card">
-                  <input class="cvc-cardinput" type="text" placeholder="e.g. 123">
+                  <input class="cvc-cardinput" type="text" placeholder="e.g. 123" minlength="3" maxlength="3" required oninput="if (this.value.lenght > this.maxlength) this.value = this.value.slice(0 , maxlength)">
                 </div>
               </div>
               <div>
